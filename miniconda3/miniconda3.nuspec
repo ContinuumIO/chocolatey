@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>continuum_miniconda3</id>
+    <title>Miniconda3</title>
+    <version>4.0.5</version>
+    <authors>Continuum Analytics</authors>
+    <owners>Michael Sarahan</owners>
+    <summary>A cross-platform, language agnostic package manager</summary>
+    <description>Miniconda is a powerful tool for readily accessing data analytics in several ecosystems (Python, R, Lua, more...)
+
+    This installer sets up Miniconda with Python 3.5, and leaves you ready to build your stack, or use existing environment
+    specifications to quickly get up to speed.
+    </description>
+    <projectUrl>http://conda.pydata.org/miniconda.html</projectUrl>
+    <packageSourceUrl>https://github.com/ContinuumIO/chocolatey</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>miniconda3 admin python r data analytics continuum</tags>
+    <copyright>2016</copyright>
+    <licenseUrl>https://docs.continuum.io/anaconda/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/miniconda3.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
