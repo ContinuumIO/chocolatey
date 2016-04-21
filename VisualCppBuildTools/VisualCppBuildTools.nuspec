@@ -2,23 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
     <id>VisualCppBuildTools</id>
-    <version>14.0.24720.01</version>
-    <title>Visual C++ Build Tools 2015 Technical Preview</title>
+    <version>14.0.25123.0</version>
+    <title>Visual C++ Build Tools 2015</title>
     <authors>Microsoft</authors>
-    <owners>Jivko Kolev, Kenneth Berntsen</owners>
+    <owners>Jivko Kolev, Kenneth Berntsen, Michael Sarahan, Jordi Garcia</owners>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=49983</projectUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
-    <packageSourceUrl>https://github.com/KennethB/Chocolatey_VisualStudio2015/tree/master/VisualCppBuildTools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/continuumIO/chocolatey/tree/master/VisualCppBuildTools</packageSourceUrl>
     <docsUrl>https://msdn.microsoft.com/library</docsUrl>
-     <!--<projectSourceUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioEnterprise</projectSourceUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>### Overview
-This is a pre-release for Visual C++ Build Tools 2015. Visual C++ Build Tools 2015 provides the essential tools for building C++ applications and libraries targeting Windows desktop. If you want to build your C++ projects targeting Windows desktop without having Visual Studio installed on your computer, Visual C++ Build Tools 2015 provides the requisite C++ compilers, libraries, build scripts, and Windows SDKs.
+Visual C++ Build Tools 2015 provides the essential tools for building C++ applications and libraries targeting Windows desktop. If you want to build your C++ projects targeting Windows desktop without having Visual Studio installed on your computer, Visual C++ Build Tools 2015 provides the requisite C++ compilers, libraries, build scripts, and Windows SDKs.
 
-The Visual C++ Build Tools 2015 Technical Preview ships with the same C++ compilers and libraries packaged with the Visual Studio 2015 Update 1.
+The Visual C++ Build Tools 2015 ships with the same C++ compilers and libraries packaged with Visual Studio 2015 at the same update level (currently 2).
 
 ### Customizations
 You can customize the installation either by adding optional available features or by specifying own installation configuration file.
@@ -28,7 +25,7 @@ Optional features (Phone tools, etc.) are available but not installed by default
 You can provide optional parameters to include them during the install.
 Here is example that includes the Android and iOS build tools:
 
-    choco install VisualCppBuildTools -packageParameters "--Features L_MDDCPlusPlus_iOS_V4,L_MDDCPlusPlus_Android_V4"
+    choco install VisualCppBuildTools -packageParameters "--Features L_MDDCPlusPlus_iOS_V6,L_MDDCPlusPlus_Android_V6"
 
 ##### Available features: see AdminDeployment.xml
 
@@ -39,7 +36,7 @@ Example:
     choco install VisualCppBuildTools -packageParameters "--AdminFile c:\path to your\AdminDeployment.xml"
     choco install VisualCppBuildTools -packageParameters "--AdminFile http://path/to/your/AdminDeployment.xml"</description>
     <summary>Build tools (compiler, SDKs, no IDE) from VS 2015</summary>
-    <tags>Microsoft Visual C++ Build Tools 2015 Technical Preview admin</tags>
+    <tags>Microsoft Visual C++ Build Tools 2015 admin</tags>
     <releaseNotes>- Created build tools package</releaseNotes>
   </metadata>
 </package>
